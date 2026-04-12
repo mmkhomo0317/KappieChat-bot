@@ -7,18 +7,12 @@ namespace KappieChat_bot
     {
         static void Main(string[] args)
         {
-            
-            AudioPlayer.playGreeting();
-
-            Chatbot.Displaylogo();
-
-            UserStringHandle user = new User();
-            user user = new user(); 
+            AudioPayer.PlayGreeting();
+            KappieChatBot.DisplayLogo();
+            User user = new User(); 
             user.GetUserName();
-
-            Chatbot bot = new Chatbot(user);
+            KappieChatBot bot = new KappieChatBot(user);
             bot.StartChat();
-
             Console.ReadLine();
         }
     }
