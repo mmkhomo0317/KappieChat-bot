@@ -40,12 +40,10 @@ _  /| | / /_/ /__  /_/ /_  /_/ /  / /  __/     / /___  _  / / / /_/ // /_ _/____
 
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("\nAvailable Questions: ");
-            Console.WriteLine("- What is cybersecurity?");
             Console.WriteLine("- How can I create a strong password?");
             Console.WriteLine("- What is phishing?");
             Console.WriteLine("- What is malware?");
-            Console.WriteLine("- What is ransomware?");
-            Console.WriteLine("- What is two-factor authentication (2FA)?");
+            Console.WriteLine("- What is social engineering?");
             Console.WriteLine("- Thank you! to quit");
             Console.ResetColor();
 
@@ -86,15 +84,25 @@ _  /| | / /_/ /__  /_/ /_  /_/ /  / /  __/     / /___  _  / / / /_/ // /_ _/____
             }
             else if (input.Contains("cybersecurity"))
             {
-                Console.WriteLine("Bot: Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. Do you have any specific questions about it?");
+                Console.WriteLine("Bot: Protecting computers, servers, mobile devices, electronic systems, networks, and data from malevolent attacks is known as cybersecurity." +
+                    " Sensitive data is shielded from illegal access, data breaches," +
+                    " and other cyberthreats by a variety of technologies, procedures, and practices.");
             }
-            else if (input.Contains("Scams"))
+            else if (input.Contains("scams"))
             {
-                Console.WriteLine("Bot: Scams are fraudulent schemes designed to deceive people. Always be cautious of unsolicited messages and offers that seem too good to be true.");
+                Console.WriteLine("Bot: A Scam is a dishonest or fraudulent scheme that attempts to take money or something of value from people. It is a confidence trick that dishonest groups," +
+                    " individuals, or companies perform. The person who carries out a scam is a scammer, trickster, or swindler.");
             }
-            else if (input.Contains("Password"))
+            else if (input.Contains("password"))
             {
-                Console.WriteLine("Bot: A strong password should be at least 12 characters long and include a mix of letters, numbers, and special characters. Do you want tips on creating a strong password?");
+                Console.WriteLine("Bot: For increased security, make sure your password is at least 12–16 characters long." +
+                    "\r\n\r\nCombine capital and lowercase characters, numbers, and symbols (e.g., H3ll!).I@mJ0d1n3)." +
+                    "\r\n\r\nDon't use private information like addresses, names, or birthdays." +
+                    "\r\n\r\nCommon words, phrases, or keyboard patterns like \"password,\" \"1234,\" or \"qwerty\" should not be used." +
+                    "\r\n\r\nCombine random, unrelated words to create a memorable passphrase (e.g., \"correct^Horse2Battery^Staple\")." +
+                    "\r\n\r\nMake an acronym out of a memorable line (for example, \"I love ice cream every summer\" becomes Il!c3Ev$)." +
+                    "\r\n\r\nDon't use the same password for several accounts." +
+                    "\r\n\r\nTo create and safely store strong, one-of-a-kind passwords, think about utilizing a password manager.");
             }
             else if (input.Contains("phishing"))
             {
@@ -104,19 +112,11 @@ _  /| | / /_/ /__  /_/ /_  /_/ /  / /  __/     / /___  _  / / / /_/ // /_ _/____
             {
                 Console.WriteLine("Bot: Malware is malicious software designed to harm or exploit any programmable device or network. It's important to keep your software updated and use reputable antivirus programs to protect against malware.");
             }
-            else if (input.Contains("ransomware"))
-            {
-                Console.WriteLine("Bot: Ransomware is a type of malware that encrypts a victim's files and demands payment to restore access. Always back up your data regularly and be cautious of email attachments and links to avoid ransomware attacks.");
-            }
-            else if (input.Contains("two-factor authentication") || input.Contains("2fa"))
-            {
-                Console.WriteLine("Bot: Two-factor authentication (2FA) adds an extra layer of security to your accounts by requiring a second form of verification, such as a code sent to your phone. It's highly recommended to enable 2FA on all your important accounts.");
-            }
-            else if (input.Contains("Social Engineering"))
+            else if (input.Contains("social engineering"))
                     {
                 Console.WriteLine("Bot: Social engineering is a manipulation technique that exploits human error to gain private information, access, or valuables. Always be cautious of unsolicited requests for information and verify the identity of the requester.");
             }
-            else if (input.Contains("Thank you") || input.Contains("Thanks"))
+            else if (input.Contains("thank you") || input.Contains("thanks"))
             {
                 Console.WriteLine("Bot: You're welcome! If you have any more questions, feel free to ask.");
             }
